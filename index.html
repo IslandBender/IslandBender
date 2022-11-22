@@ -27,10 +27,11 @@ body {
         
         
      
-video {
-  min-width: 100%;
-  min-height: 100vh;
+#PlayIslandBender {
+  width: 100%;
+  height: auto;
   z-index: 1;
+  position: fixed;
 }
         
         
@@ -43,14 +44,29 @@ video {
 
 }
         
-        
+ @media (min-aspect-ratio: 16/9) {
+    #PlayIslandBender {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #PlayIslandBender { 
+        width:auto;
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    #PlayIslandBender {
+        display: none;
+    } 
         
     </style>
 </head>
 <body>
     
-    <div class="background">
-          <video src="IslandBender.mp4" loop muted autoplay type="video/mp4"></video>
+    <video id="PlayIslandBender" autoplay muted loop>
+          <source src="IslandBender.mp4" type="video/mp4"></video>
 
     <div class="overlay">  
   <img class="overlay" src="Island-Bender.png">
