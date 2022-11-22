@@ -22,9 +22,23 @@
         }
         
 }
-#logo {
-    position:absolute;
-    text-align:left;
+
+#wrapper {
+  position: relative;
+  display: inline-block;
+}
+#reel {
+  width: 100vw;
+}
+.overlay {
+  position: absolute;
+  width: 40%;
+  left: 30%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
         
         
@@ -32,6 +46,18 @@
     </style>
 </head>
 <body>
+    
+    <div id="wrapper">
+  <video playsinline autoplay muted loop id="reel">
+    <source src="IslandBender.mp4" type="video/mp4">
+  </video>
+  <img class="overlay" src="Island-Bender.png">
+</div>
+    
+    
+    
+    
+    
     <video autoplay loop id="IslandBender">
     <source src="IslandBender.mp4" type="video/mp4">
       
