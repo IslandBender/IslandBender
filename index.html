@@ -5,42 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Island Bender</title>
-
+    
 
     <style>
-body {
+    body {
+    position: absolute;
   margin: 0;
-  background: #000; 
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
 video { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
+    position: relative;
     background-size: cover;
-    transition: 1s opacity;
 }
-        
-        
+
+
+#wrapper {
+  position: relative;
+  display: inline-block;
+}
+#reel {
+  width: 100vw;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  width: 40%;
+  left: 4%;
+  top: 15%;
+
+}
+    
+
+.description {
+  position: absolute;
+  width: 40%;
+  left: 13%;
+  top: 47%;
+
+}
+
+
+.p {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
     </style>
 </head>
     
     
-    
-<body>
- 
-    <video poster="IslandBender-poster.png" id="bgvid" playsinline autoplay muted loop>
-<source src="IslandBender.mp4" type="video/mp4">
+ <body>
+    <div id="wrapper">
+        <video playsinline autoplay muted loop id="reel">
+          <source src="IslandBender.mp4" type="video/mp4">
+        </video>
+        <img class="overlay" src="Island-Bender.png">
+      </div>
 
-</video>
+
+      <div class="description">
+        <p>Basically you throw rocks at each other.</p>
+      </div>
+
+
     
       
-       
 </body>
 </html>
