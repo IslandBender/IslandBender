@@ -153,21 +153,32 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 		<script>
-			const cookieConsent = document.querySelector('#simple-cookie-consent');
-const cookieConsentAllow = document.querySelector('.cookie-consent-allow');
+	const cookieConsentAllow = document.querySelector('.cookie-consent-allow');
 const cookieConsentDeny = document.querySelector('.cookie-consent-deny');
 
+// Set up event listeners for the Allow and Deny buttons
 cookieConsentAllow.addEventListener('click', function() {
-  // Set a cookie to indicate that the user has allowed all cookies
-  document.cookie = "cookies_allowed=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-  cookieConsent.style.display = 'none';
+  // Set a cookie indicating that the user has allowed all cookies
+  document.cookie = "cookieConsent=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+  
+  // Close the cookie consent banner
+  closeCookieConsentBanner();
 });
 
 cookieConsentDeny.addEventListener('click', function() {
-  // Set a cookie to indicate that the user has only allowed necessary cookies
-  document.cookie = "cookies_allowed=false; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-  cookieConsent.style.display = 'none';
+  // Set a cookie indicating that the user has only allowed necessary cookies
+  document.cookie = "cookieConsent=false; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+  
+  // Close the cookie consent banner
+  closeCookieConsentBanner();
 });
+
+function closeCookieConsentBanner() {
+  // Hide the cookie consent banner
+  const banner = document.querySelector('#simple-cookie-consent');
+  banner.style.display = 'none';
+}
+
 		</script>
 
 	</body>
