@@ -152,6 +152,23 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		<script>
+			const cookieConsent = document.querySelector('#simple-cookie-consent');
+const cookieConsentAllow = document.querySelector('.cookie-consent-allow');
+const cookieConsentDeny = document.querySelector('.cookie-consent-deny');
+
+cookieConsentAllow.addEventListener('click', function() {
+  // Set a cookie to indicate that the user has allowed all cookies
+  document.cookie = "cookies_allowed=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+  cookieConsent.style.display = 'none';
+});
+
+cookieConsentDeny.addEventListener('click', function() {
+  // Set a cookie to indicate that the user has only allowed necessary cookies
+  document.cookie = "cookies_allowed=false; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+  cookieConsent.style.display = 'none';
+});
+		</script>
 
 	</body>
 </html>
