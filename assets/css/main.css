@@ -2190,3 +2190,60 @@ input, select, textarea {
 			}
 
 		}
+
+body {
+  font-family: sans-serif;
+}
+#simple-cookie-consent {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  resize: vertical;
+  overflow: auto;
+  z-index: 999999999;
+  background: rgba(0, 0, 0, 0.7);
+}
+#simple-cookie-consent .cookie-consent-container {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  margin: -100px auto 0;
+  background: #fff;
+  padding: 20px;
+  max-width: 500px;
+}
+#simple-cookie-consent .cookie-consent-selection {
+  text-align: right;
+}
+#simple-cookie-consent button {
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0 0 10px;
+  background: none;
+  font-size: 1.1em;
+}
+#simple-cookie-consent button.cookie-consent-allow {
+  background-color: #04aa6d;
+  color: #fff;
+}
+#simple-cookie-consent button.cookie-consent-allow:focus,
+#simple-cookie-consent button.cookie-consent-allow:hover {
+  background-color: #059862;
+  cursor: pointer;
+}
+#simple-cookie-consent button.cookie-consent-deny {
+  padding: 5px 0;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+#simple-cookie-consent button.cookie-consent-deny:focus,
+button.cookie-consent-deny:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+#simple-cookie-consent hr {
+  margin: 15px 0;
+}
