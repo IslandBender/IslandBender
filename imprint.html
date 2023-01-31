@@ -36,41 +36,46 @@
 <style>
     h1, h2{
     font-family: Coves, Roboto, sans-serif;
-    font-size: 28px;
+    font-size: 2.8rem;
 }
-
+*{
+	box-sizing: border-box;
+}
 body, html {
     width: 100%;
+	overflow-x: hidden;
     margin: 0px;
     padding: 0px;
     background-color: #0e0e0f;
     color: #fff;
     font-family: Roboto, sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     box-sizing: border-box;
 }
 
 p {
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 a {
     color: white;
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 1.5rem;
 }
 
 
 nav {
-    padding: 10px;
+    padding: 1rem;
     z-index: 2;
-    position: relative
+    position: fixed;
+	top: 0rem;
+	left: 0rem;
     width: 100%;
-    height: 80px;
+    height: 8rem;
     display: flex;
-    flex-direction: row;;
+    flex-direction: row;
     align-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0);
     color: white;
 
 }
@@ -84,7 +89,7 @@ nav {
 
 .Logo img {
     height:100%;
-    margin-right: 30px;
+    margin-right: 3rem;
 }
 
 img {
@@ -95,26 +100,24 @@ img {
 .Content {
     width: 100%;
     margin: auto;
-    padding: 70px 0px;
 }
 
 .Content article {
     margin: auto;
     width: 100%;
-    padding: 0px 25px;
-    border-radius: 10px;
-    margin-bottom: 50px;
+    padding: 0px 2.5rem;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
 }
 
 
 
 .Content p {
-    width: 100%;
     text-align: left;
-    font-size: 16px;
+    font-size: 1.3rem;
     color: #ccc;
-    margin-bottom: 10px;
-    line-height: 23px;
+    margin-bottom: 1rem;
+    line-height: 2.3rem;
     font-family: Roboto, sans-serif;
 }
 
@@ -122,10 +125,10 @@ img {
 .Content p footer {
     width: 100%;
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #ccc;
-    margin-bottom: 10px;
-    line-height: 23px;
+    margin-bottom: 1rem;
+    line-height: 2.3rem;
 }
 
     
@@ -133,15 +136,17 @@ img {
         width: 100%;
         height: auto;
         margin: auto;
-        padding: 5px 0px;
-        max-width: 1200px;
+        padding: .5rem 0rem;
+		padding-top: 8.5rem;
+        max-width: 120rem;
+		
     }
     
     .Content article {
         margin: auto;
         width: 70%;
-        border-radius: 10px;
-        margin-bottom: 50px;
+        border-radius: 1rem;
+        margin-bottom: 5rem;
     }
  
 
@@ -158,7 +163,7 @@ img {
 
 .fa-brands {
     color: white;
-    size: 22px;
+    font-size: 2.2rem;
     text-decoration: none;
 }
 
@@ -193,6 +198,32 @@ img {
     color: white;
     text-decoration: none;
   }
+  @media only screen and (max-width: 768px){
+	html,
+	body
+	{
+		font-size: 10px;
+	}
+}
+  @media only screen and (max-width: 576px){
+	html,
+	body
+	{
+		font-size: 9px;
+	}
+	.Content article
+	{
+	width: 90%;	
+	}
+}
+
+  @media only screen and (max-width: 300px){
+	html,
+	body
+	{
+		font-size: 8px;
+	}
+}
 </style>
     </head>
     
