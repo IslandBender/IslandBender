@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;800&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  overflow-x:hidden;
+  background-color: #94331f;
+}
+h1 {
+  text-align:center;
+}
+.page {
+  width:100vw;
+  height:100vh;
+  perspective:1px;
+  perspective-origin: center center;
+  overflow-x:hidden;
+}
+.overflow {
+  position:absolute;
+  width:100vw;
+  min-height:100vh;
+  top:100vh;
+  background-color: #94331f;
+}
+#parallax {
+  transform-style: preserve-3d;
+  height:120vh;
+}
+
+.keyart_layer {
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: repeat-x;
+	position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
+
+#keyart-0 {
+  background-image: url('https://cdn.glitch.global/8af7b12d-d587-4596-9737-9482a385b258/01_logo.png?v=1678645135849');
+  background-color: #ffaf1b;
+  transform:translate3d(-11px,-46px,-1.3px) scale(2.);
+}
+#keyart-1 {
+  background-image: url('https://cdn.glitch.global/8af7b12d-d587-4596-9737-9482a385b258/02.png?v=1678644957949');
+  transform:translate3d(0,-47px,-.7px) scale(1.7);
+}
+#keyart-2 {
+  background-image: url('https://cdn.glitch.global/8af7b12d-d587-4596-9737-9482a385b258/03.png?v=1678644966293');
+  transform:translate3d(0,-98px,-.4px) scale(1.6);
+}
+#keyart-3 {
+  background-image: url('https://cdn.glitch.global/8af7b12d-d587-4596-9737-9482a385b258/04.png?v=1678644969073');
+  transform:translate3d(0,-2px,-.1px) scale(1.1);
+}
+#keyart-4 {
+  background-image: url('https://cdn.glitch.global/8af7b12d-d587-4596-9737-9482a385b258/05.png?v=1678644975982');
+  transform:translate3d(0,35px,.1px) scale(.9);
+}
+#keyart-5 {
+  background-image: url('https://cdn.glitch.global/8af7b12d-d587-4596-9737-9482a385b258/06.png?v=1678644980584');
+  transform:translate3d(0,84px,.2px) scale(.8);
+}
+#keyart-6 {
+  background-image: url('https://cdn.glitch.global/8af7b12d-d587-4596-9737-9482a385b258/07.png?v=1678644984892');
+  transform:translate3d(0, 106px,.3px) scale(.7);
+}
+#keyart-7 {
+  background-image: url('https://cdn.glitch.global/8af7b12d-d587-4596-9737-9482a385b258/08.png?v=1678644994672');
+  transform:translate3d(0,106px,.38px) scale(.65);
+}
+#keyart-8 {
+  background-image: url('https://www.firewatchgame.com/images/parallax/parallax8.png');
+  transform:translate3d(0, 180px,.45px) scale(.8);
+}
