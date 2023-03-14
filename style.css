@@ -76,3 +76,21 @@ h1 {
   background-image: url('https://www.firewatchgame.com/images/parallax/parallax8.png');
   transform:translate3d(0, 180px,.45px) scale(.8);
 }
+
+
+.button {
+    background-color: green;
+    border-radius: 6px;
+    border: 0px solid #c4aa6a;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    height: 3em;
+    line-height: 2.8em;
+    padding: 0 2em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-bottom: 0;
+}
