@@ -93,3 +93,13 @@ h1 {
     white-space: nowrap;
     margin-bottom: 0;
 }
+
+a,
+a.visited {
+	color: #dcddde;
+	text-decoration: underline;
+}
+
+a:hover {
+  background-color: #9DEEDD;
+}
