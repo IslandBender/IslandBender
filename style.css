@@ -79,16 +79,15 @@ h1 {
 
 
 .button {
-    background-color: green;
-    border-radius: 6px;
-    border: 0px solid #c4aa6a;
-    color: #333;
+    background-color: #9DEEDD;
+    border-radius: 30px;
+    color: black;
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
     height: 3em;
     line-height: 2.8em;
-    padding: 0 2em;
+    padding: 0 1em;
     text-align: center;
     text-decoration: none;
     white-space: nowrap;
