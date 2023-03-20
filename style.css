@@ -93,10 +93,3 @@ h1 {
     white-space: nowrap;
     margin-bottom: 0;
 }
-
-.bg-gray-300 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-    height: 8rem;
-    width: 15rem;
-}
