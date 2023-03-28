@@ -218,6 +218,21 @@ nav {
       font-size: 8px;
     }
   }
+	
+	
+  .accordion:after {
+  content: '\25BC'; /* down arrow icon */
+  font-size: 16px;
+  color: #666;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '\25B2'; /* up arrow icon */
+  transform: rotate(360deg);
+}
+	
 </style>
 
 </head>
