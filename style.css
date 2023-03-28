@@ -93,3 +93,70 @@ h1 {
     white-space: nowrap;
     margin-bottom: 0;
 }
+
+.Content p footer {
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+    line-height: 2.3rem;
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    position: sticky;
+}
+
+.fa-brands {
+    color: white;
+    font-size: 2.2rem;
+    text-decoration: none;
+}
+
+.fa-twitter:hover {
+    color: #00acee ;
+}
+
+.fa-tiktok:hover {
+    color: #ff0050;
+}
+
+.fa-reddit:hover {
+    color: #FF4300;
+}
+
+.fa-discord:hover {
+    color: #5865F2;
+}
+
+ ul.links {
+    padding-left: 0px;
+    text-align: center;
+  }
+  ul.links > li {
+    display: inline-block;
+ 
+  }
+  ul.links > li:hover {
+    text-decoration: underline;
+  }
+  ul.links > li > a {
+    color: white;
+    text-decoration: none;
+  }
+
+.social-media a {
+  margin-right: 15px;
+}
+
+div.flex-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.flex-links p {
+  margin-right: 10px;
+}
