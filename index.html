@@ -382,6 +382,21 @@
       function closeModal() {
         modal.classList.add("hidden");
       }
+	    
+	    var parallaxContainer = document.getElementById('parallax');
+var layers = parallaxContainer.getElementsByClassName('keyart_layer');
+
+window.addEventListener('scroll', function() {
+  var scrollPosition = window.pageYOffset;
+
+  for (var i = 0; i < layers.length; i++) {
+    var layer = layers[i];
+    var layerDepth = layer.getAttribute('data-depth');
+    var movement = -scrollPosition * layerDepth;
+    var translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+    layer.style.transform = translate3d;
+  }
+});
     </script>
   </body>
 </html>
