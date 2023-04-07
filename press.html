@@ -80,14 +80,15 @@ img {
 }
 
 #content .iframe-container {
-	position: relative;
-	/* Magic! Makes sure the container is high enough to show the entire iframe 
-	 * Thanks to http://andmag.se/2011/11/responsive-embeds/ */
-	padding-bottom: 56.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
 }
 
 #content iframe {
-	position: absolute;
+	position: flex;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -98,6 +99,78 @@ img {
 	h2 {
 		margin-top: 25px;
 	}
+}
+	    
+	          
+      
+      .recommended-videos {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.video-slider {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.video-slide {
+  flex: 0 0 33.33%;
+  margin-right: 20px;
+}
+
+.video-slide:last-child {
+  margin-right: 0;
+}
+
+.video-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.video-info {
+  padding: 10px;
+}
+
+.video-info h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.video-info p {
+  margin: 5px 0;
+  }
+  
+  .slide-div {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.slide-div::-webkit-scrollbar {
+  display: none;
+}
+
+.video-container {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.video {
+  width: 320px;
+  height: 180px;
+}
+
+.video-title {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
 }
     </style>
 	</head>
@@ -318,7 +391,35 @@ img {
 </li>
   </li>
 </ul>
-
+<div class="recommended-videos">
+  <h2>YouTubers playing Island Bender</h2>
+  <div class="video-slider">
+        <div class="video-slide">
+      <iframe width="225" height="150" src="https://www.youtube.com/embed/RFKTHIW50No" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+        <div class="video-slide">
+      <iframe width="225" height="150" src="https://www.youtube.com/embed/XIuTmymM_jo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="video-slide">
+      <iframe width="225" height="150" src="https://www.youtube.com/embed/lT986BRuf0I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="video-slide">
+<iframe width="225" height="150" src="https://www.youtube.com/embed/6lh19utGZo8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="video-slide">
+      <iframe width="225" height="150" src="https://www.youtube.com/embed/KAlfA3sn4wY" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+    </div>
+     <div class="video-slide">
+      <iframe width="225" height="150" src="https://www.youtube.com/embed/LF1C8nrs1cY" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+    </div>
+     <div class="video-slide">
+      <iframe width="225" height="150" src="https://www.youtube.com/embed/cAo5PYGsMzs" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+    </div>
+     <div class="video-slide">
+      <iframe width="225" height="150" src="https://www.youtube.com/embed/d0goDMB2k9c" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+    </div>
+</div>
+  </div>
 <hr>
 <div class="uk-grid">
   <div class="uk-width-medium-1-2">
