@@ -8,7 +8,7 @@ body {
   margin: 0;
   font-family: Coves, "Be Vietnam Pro", sans-serif;
   overflow-x: hidden;
-  background-color: #042d26;
+  background-color: background: linear-gradient(90deg, rgba(157,238,221,1) 0%, rgba(20,158,148,1) 35%, rgba(10,71,67,1) 100%);
 }
 .Content p footer {
   width: 100%;
