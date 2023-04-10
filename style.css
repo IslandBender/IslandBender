@@ -1,151 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;800&display=swap");
+
+* {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
-  font-family: Coves, 'Be Vietnam Pro', Roboto, sans-serif;
-  overflow-x:hidden;
+  font-family: Coves, "Be Vietnam Pro", sans-serif;
+  overflow-x: hidden;
   background-color: #94331f;
 }
-h1 {
-  text-align:center;
-}
-.page {
-  width:100vw;
-  height:100vh;
-  perspective:1px;
-  perspective-origin: center center;
-  overflow-x:hidden;
-}
-.overflow {
-  position:absolute;
-  width:100vw;
-  min-height:100vh;
-  top:100vh;
-  background-color: #129699;
-}
-#parallax {
-  transform-style: preserve-3d;
-  height:120vh;
-}
-
-.keyart_layer {
-	background-position: bottom center;
-	background-size: cover;
-	background-repeat: repeat-x;
-	position: absolute;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-}
-
-#keyart-0 {
-  background-image: url('/assets/images/1.png');
-  background-color: #ffaf1b;
-  transform:translate3d(-11px,-46px,-1.3px) scale(2.);
-}
-#keyart-1 {
-  background-image: url('/assets/images/2.png');
-  transform:translate3d(0,-47px,-.7px) scale(1.7);
-}
-#keyart-2 {
-  background-image: url('/assets/images/3.png');
-  transform:translate3d(0,-98px,-.4px) scale(1.6);
-}
-#keyart-3 {
-  background-image: url('/assets/images/4.png');
-  transform:translate3d(0,-2px,-.1px) scale(1.1);
-}
-#keyart-4 {
-  background-image: url('/assets/images/5.png');
-  transform:translate3d(0,35px,.1px) scale(.9);
-}
-#keyart-5 {
-  background-image: url('/assets/images/6.png');
-  transform:translate3d(0,84px,.2px) scale(.8);
-}
-#keyart-6 {
-  background-image: url('/assets/images/7.png');
-  transform:translate3d(0, 106px,.3px) scale(.7);
-}
-#keyart-7 {
-  background-image: url('/assets/images/8.png');
-  transform:translate3d(0,106px,.38px) scale(.65);
-}
-#keyart-8 {
-  background-image: url('/assets/images/9.png');
-  transform:translate3d(0, 180px,.45px) scale(.8);
-}
-
-
-.button {
-    background-color: #9DEEDD;
-    border-radius: 30px;
-    color: black;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 600;
-    height: 3em;
-    line-height: 2.8em;
-    padding: 0 1em;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
-    margin-bottom: 0;
-}
-
 .Content p footer {
-    width: 100%;
-    text-align: center;
-    font-size: 1.6rem;
-    color: #ccc;
-    margin-bottom: 1rem;
-    line-height: 2.3rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+  line-height: 2.3rem;
 }
 
 .footer {
-    color: white;
-    text-align: center;
-    position: sticky;
+  color: white;
+  text-align: center;
+  position: sticky;
 }
 
 .fa-brands {
-    color: white;
-    font-size: 2.2rem;
-    text-decoration: none;
+  color: white;
+  font-size: 2.2rem;
+  text-decoration: none;
 }
 
-.fa-twitter:hover {
-    color: #00acee ;
+ul.links {
+  padding-left: 0px;
+  text-align: center;
 }
-
-.fa-tiktok:hover {
-    color: #ff0050;
+ul.links > li {
+  display: inline-block;
 }
-
-.fa-reddit:hover {
-    color: #FF4300;
+ul.links > li:hover {
+  text-decoration: underline;
 }
-
-.fa-discord:hover {
-    color: #5865F2;
+ul.links > li > a {
+  color: white;
+  text-decoration: none;
 }
-
- ul.links {
-    padding-left: 0px;
-    text-align: center;
-  }
-  ul.links > li {
-    display: inline-block;
- 
-  }
-  ul.links > li:hover {
-    text-decoration: underline;
-  }
-  ul.links > li > a {
-    color: white;
-    text-decoration: none;
-  }
 
 .social-media a {
   margin-right: 15px;
@@ -159,4 +58,28 @@ div.flex-links {
 
 div.flex-links p {
   margin-right: 10px;
+}
+
+#parallax-container {
+  position: fixed;
+  width: 2400px;
+  height: 712px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#parallax-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  will-change: transform;
+}
+
+#parallax-container img:last-child::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  background: rgb(45, 10, 13);
 }
