@@ -180,11 +180,11 @@
         <div
           class="absolute top-[711px] w-screen h-full bg-[#032d26] text-white"
         >
-          <div id="main" class="bg-[#032d26] text-black">
+          <div id="main" class="bg-[#032d26] text-black mt-3 pt-3">
             <div
-              class="mt-8 mx-auto py-5 px-10 container flex flex-col bg-white text-black md:rounded-md text-center"
+              class="mt-8 mt-5 mx-auto py-5 px-10 container flex flex-col bg-white text-black md:rounded-md text-center"
             >
-              <p class="text-2xl font-semibold text-white-400">
+              <p class="text-3xl font-bold text-white-400">
                 Challenge Your Friends to an Earthbending Battle in Island
                 Bender!
               </p>
@@ -206,26 +206,29 @@
                 </p>
               </div>
             </div>
-	<div class="mt-8 mx-auto py-5 px-10 container flex flex-col bg-white text-black md:rounded-md text-center" style="padding-top: 1.25rem; padding-bottom: 2.5rem;">
 
-            <div
-              class="mt-8 mx-auto px-10 md:px-px container flex flex-col md:flex-row bg-[#032d26]"
-            >
+    
 		    
-              <div class="w-full md:w-1/2">
-                <iframe
-                  class="w-full h-[300px] md:h-[500px]"
-                  src="https://www.youtube-nocookie.com/embed/05PsXkstdEw?controls=0"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen=""
-                ></iframe>
-              </div>
-              <div
-                id="mini-images"
-                class="mt-8 md:mt-0 w-full h-[50vh] md:h-auto md:w-1/2 grid grid-cols-3 grid-rows-3"
-              >
+          <div class="mt-8 mx-auto px-10 md:px-px container flex flex-col md:flex-row ">
+<div class="w-full md:w-1/2 bg-white p-4 mr-4 md:mr-8" style="border-radius: 0.5rem">
+  <iframe
+    class="w-full h-[300px] md:h-[500px]"
+    src="https://www.youtube-nocookie.com/embed/TEH-bcE7oGA?controls=0" allowfullscreen
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen="true"
+    mozallowfullscreen="true"
+    webkitallowfullscreen="true"
+    id="video-player"
+  ></iframe>
+</div>
+            
+
+  <div
+    id="mini-images"
+    class="mt-8 md:mt-0 w-full w-full md:w-1/2 bg-white p-4 h-[50vh] md:h-auto md:w-1/2 grid grid-cols-3 grid-rows-3"
+  style="border-radius: 0.5rem">
                 <div
                   class="bg-cover hover:bg-[length:250%] hover:brightness-125 cursor-pointer bg-center bg-no-repeat"
                   style="
@@ -282,12 +285,12 @@
                 ></div>
               </div>
             </div>
-		  </div>
+          
             <div class="mt-8 w-full h-fit py-8">
               <div
-                class="font-bold text-2xl mb-6 pt-4 items-center text-center text-white"
+                class="font-bold text-4xl mb-6 pt-4 items-center text-center text-white"
               >
-                How to Play: Game Controls
+                Game Controls
               </div>
               <div
                 class="container px-10 lg:px-0 mx-auto flex flex-col lg:flex-row gap-10"
@@ -312,8 +315,8 @@
                       />
                     </picture>
                   </div>
-                  <div class="font-bolder text-xl">Jump</div>
-                  <div class="text-center">
+                  <div class="font-bold text-3xl">Jump</div>
+                  <div class="text-center text-xl">
                     Jump from rock to rock and survive on shaky platforms while
                     you throw rocks at each other!
                   </div>
@@ -354,9 +357,9 @@
                       />
                     </picture>
                   </div>
-                  <div class="font-bolder text-xl">Create Rock</div>
-                  <div class="text-center">
-                    Get ready to rock and roll! Start pressing and let the
+                  <div class="font-bold text-3xl">Create Rock</div>
+                  <div class="text-center text-xl">
+                    Get ready to rock and roll! Start pressing the buttons and let the
                     rock-making fun begin!
                   </div>
                   <div>
@@ -396,8 +399,8 @@
                       />
                     </picture>
                   </div>
-                  <div class="font-bolder text-xl">Throw Rock</div>
-                  <div class="text-center">
+                  <div class="font-bold text-3xl">Throw Rock</div>
+                  <div class="text-center text-xl">
                     You'll have to use your strategic skills to aim and throw
                     rocks at your opponents to defeat them.
                   </div>
@@ -423,7 +426,7 @@
             <div
               class="h-auto flex flex-col items-center pt-4 pb-16 bg-no-repeat bg-cover"
             >
-              <div class="text-2xl text-white font-bold">Collect Power-Ups</div>
+              <div class="text-4xl text-white font-bold">Collect Power-Ups</div>
               <div
                 class="flex flex-col h-fit items-start gap-10 lg:flex-row container mt-8 mx-auto px-10 lg:px-0 text-white"
               >
@@ -446,8 +449,8 @@
                       class="h-18 rounded-lg border-2 mb-4"
                     />
                   </picture>
-                  <p class="text-xl font-bold mb-4">TRIPLE SHOT</p>
-                  <p style="text-align: justify">
+                  <p class="text-3xl font-bold mb-4">TRIPLE SHOT</p>
+                  <p style="text-xl; text-align: justify ">
                     Throw three rocks at once, increasing your chances of
                     hitting your opponents. It's a great option if you're trying
                     to take out multiple opponents at once or if you just want
@@ -475,7 +478,7 @@
                     />
                     
                   </picture>
-                  <p class="text-xl font-bold mb-4">BIGGER ROCK</p>
+                  <p class="text-3xl font-bold mb-4">BIGGER ROCK</p>
                   <p style="text-align: justify">
                     It does exactly what it sounds like - it makes your rock
                     bigger, which means it crushes smaller rocks on its path. If
@@ -503,7 +506,7 @@
                       class="h-18 rounded-lg border-2 mb-4"
                     />
                   </picture>
-                  <p class="text-xl font-bold mb-4">SHOTGUN</p>
+                  <p class="text-3xl font-bold mb-4">SHOTGUN</p>
                   <p style="text-align: justify">
                     Game changer! When you throw a
                     rock with this power-up, it breaks apart into several
@@ -532,7 +535,7 @@
                       class="h-18 rounded-lg border-2 mb-4"
                     />
                   </picture>
-                  <p class="text-xl font-bold mb-4">SPIKES</p>
+                  <p class="text-3xl font-bold mb-4">SPIKES</p>
                   <p style="text-align: justify">
                     Create a set of spikes on the ground to damage
                     opponents who walk over them. This power-up can be
@@ -545,11 +548,14 @@
             </div>
 </div>
                                 <div class="">
-           <div class="font-bold text-2xl mb-4 pt-4 items-center text-center text-white">Milestones</div>
+           <div class="font-bold text-4xl mb-4 pt-4 items-center text-center text-white" >Milestones</div>
           
-         <div class="container mx-auto h-62 w-screen py-6 overflow-x-scroll md:overflow-x-auto touch-pan-x bg-white">
+         <div class="container mx-auto h-62 w-screen py-6 overflow-x-scroll md:overflow-x-auto touch-pan-x bg-white" style="border-radius: 0.5rem">
   <div class="mt-8 mx-auto py-5 px-10 container flex flex-col text-black md:rounded-md text-center">
     <div id="cards" class="flex flex-nowrap gap-10 w-[calc(6_*_300px)] h-48 px-10 md:px-0">
+      <div class="bg-center bg-[linear-gradient(transparent_70%,rgba(0,0,0,0.5)_30%),url('https://cdn.akamai.steamstatic.com/steam/apps/2224760/header.jpg?t=1680304639')] flex items-end w-[350px] h-full px-10 py-2 rounded drop-shadow-md bg-cover">
+        <p class="text-center text-[14px] text-white">Steam Early Access Release, March 2023</p>
+      </div> 
       <div class="bg-center bg-[linear-gradient(transparent_70%,rgba(0,0,0,0.5)_30%),url('https://islandbender.com//press-media/Gamedevs-nrw_IslandBender_Premortem2.JPG')] flex items-end w-[350px] h-full px-10 py-2 rounded drop-shadow-md bg-cover">
         <p class="text-center text-[14px] text-white">gamedevs.nrw New Year's Reception, January 2023</p>
       </div> 
@@ -577,7 +583,7 @@
                 <div
                   class="h-[auto] mt-8 lg:px-32 flex flex-col text-center bg-white rounded-md border border-white p-4"
                 >
-                  <p class="text-2xl font-semibold text-white-400">
+                  <p class="text-3xl font-bold text-white-400">
                     A Message from the Team
                   </p>
                   <p class="mt-4 text-xl font-semibold text-white-400">
@@ -615,7 +621,7 @@
                   <div
                     class="h-[auto] mt-8 lg:px-32 flex flex-col text-center bg-white rounded-md border border-white p-4"
                   >
-                    <p class="text-2xl font-semibold text-white-400">
+                    <p class="text-2xl font-bold text-white-400">
                       Join our mailing list
                     </p>
                     <br />
@@ -728,7 +734,7 @@
                  <div
               class="h-[auto] mt-8 lg:px-32 flex flex-col text-center bg-white rounded-md border border-white p-4"
             >
-              <p class="text-2xl font-semibold text-white-400">
+              <p class="text-2xl font-bold text-white-400">
                 Press and Content Creators
               </p>
               <p class="mt-4 text-xl font-semibold text-white-400">
