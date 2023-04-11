@@ -54,3 +54,19 @@ const render = () => {
 };
 
 window.addEventListener("scroll", render, false);
+
+  const videoPlayer = document.getElementById("video-player");
+
+  videoPlayer.addEventListener("click", function() {
+    if (!document.fullscreenElement) {
+      videoPlayer.requestFullscreen()
+        .catch(err => {
+          alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+    } else {
+      document.exitFullscreen()
+        .catch(err => {
+          alert(`Error attempting to exit full-screen mode: ${err.message} (${err.name})`);
+        });
+    }
+  });
