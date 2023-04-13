@@ -84,16 +84,17 @@ nav {
     margin-right: 3rem;
   }
 
-	.hidden {
-    display: none;
-  }
 	
   .img {
     overflow-clip-margin: content-box;
     overflow: clip;
   }
   
-
+@media only screen and (max-width: 768px) {
+  #logo {
+    display: none;
+  }
+}
   
 .button {
     background-color: ##9DEEDD;
@@ -244,7 +245,7 @@ footer p {
   </head>
   <body id="main">
          <nav>
-        <div class="Logo">
+        <div id="logo" class="Logo">
             <a href="https://islandbender.com" target="_blank"><img src="https://islandbender.com/assets/logo.png" "width:50px" "height:50px"></a>
         </div>
       
@@ -329,14 +330,16 @@ footer p {
               </div>
             </footer>
     <script>
-  window.addEventListener('scroll', function() {
-    var logo = document.getElementById('logo');
-    if (window.innerWidth <= 767 && window.pageYOffset > 0) {
-      logo.classList.add('hidden');
-    } else {
-      logo.classList.remove('hidden');
-    }
-  });
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("logo").style.display = "block";
+  } else {
+    document.getElementById("logo").style.display = "none";
+  }
+  prevScrollpos = currentScrollPos;
+}
 </script>
 
     
