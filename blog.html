@@ -1,0 +1,330 @@
+<!-- Developed by Inês Reis @inesreisx. A game by Felix Voigtländer @felix.voigtlaender, Sima Spielmann @karacho_sima, Anh-Thu Nguyen, and Florian Simon @florian_simon_composer. ®2023 Island Bender from Island Bender Games -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XN5LBLM7QH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XN5LBLM7QH');
+</script>
+	<!---<meta http-equiv="refresh" content="0; url=https://islandbender.com/press">----->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog | Island Bender</title>
+		<meta name="description" content="On Steam. Learn more about how to play, tips and tricks, and the team behind Island Bender, the ultimate couch-fighting earthbending game with up to 6 players." />
+	  <link rel="canonical" href="https://islandbender.com/" />
+	  <link rel="icon" type="image/x-icon" href="https://img.itch.zone/aW1nLzgzNTUwMjUucG5n/32x32%23/G8aY8s.png">
+	  <meta property="og:title" content="Island Bender"/>
+	  <meta property="og:url" content="https://islandbender.com"/>
+	  <meta property="og:site_name" content="Island Bender">
+	  <meta property="og:description" content="Island Bender is a physics-based couch-fighting game with up to 6 players. Throw rocks at each other, collect power-ups and master your bending style. Have fun"/>
+	  <meta property="og:image" content="https://cdn.cloudflare.steamstatic.com/steam/apps/2224760/header.jpg?t=1680304639"/>
+	  <meta property="og:type" content="website"/>
+	  <meta name="twitter:card" content="summary_large_image">
+	  <meta name="twitter:site" content="@islandbender">
+	  <meta name="twitter:creator" content="@islandbender">
+	  <meta name="twitter:title" content="Island Bender">
+	  <meta name="twitter:description" content="Island Bender is a physics-based couch-fighting game with up to 6 players. Throw rocks at each other, collect power-ups and master your bending style. Have fun!">
+	  <meta name="twitter:image:src" content="https://cdn.cloudflare.steamstatic.com/steam/apps/2224760/header.jpg?t=1680304639">
+	  <meta name="twitter:url" content="https://islandbender.com">
+	    <link href="style.css" rel="stylesheet" type="text/css" />
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <script src="https://cdn.tailwindcss.com"></script>
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/classic-071822.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+  
+  body {
+  font-family: Coves, sans-serif;
+  min-height: 100vh;
+}
+  
+nav {
+    padding: 1rem;
+    z-index: 2;
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    background-color: ;
+    color: white;
+  }
+
+  .Logo {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Logo img {
+    height: 100%;
+    margin-right: 3rem;
+  }
+
+  .img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+  
+
+  
+.button {
+    background-color: ##9DEEDD;
+    border-radius: 30px;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    height: 3em;
+    line-height: 2.8em;
+    padding: 0 1em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+
+.fa-brands {
+  color: white;
+  font-size: 2.2rem;
+  text-decoration: none;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+  ul.links > li {
+    flex-basis: 50%;
+  }
+}
+ul.links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+ul.links > li {
+  margin: 0.5rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 767px) {
+  ul.links > li {
+    flex-basis: 50%;
+  }
+}
+
+.social-media a {
+  margin-right: 15px;
+}
+
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.9rem;
+  margin: 0 auto;
+}
+  
+.thumbnail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  flex-basis: 30%;
+  flex-grow: 1;
+  max-width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+}
+  
+.thumbnail img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.thumbnail h2 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+.thumbnail p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+}
+.thumbnail .date {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  color: #999;
+}
+.thumbnail a {
+  display: block;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #9DEEDD;
+  border-radius: 1.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.thumbnail a:hover {
+  background-color: #9DEEDD;
+  color: black;
+}
+footer {
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+}
+  
+footer p {
+  margin: 0.5rem 0;
+  font-size: 20px;
+}
+
+  
+@media screen and (min-width: 768px) {
+  .thumbnail {
+    width: 33.33%;
+  }
+}
+
+  @media screen and (max-width: 767px) {
+  .thumbnail {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+  
+  #main {
+  background: linear-gradient(360deg, rgba(157,238,221,1) 0%, rgba(87,214,205,1) 24%, rgba(10,71,67,1) 100%);
+}
+    </style>
+  </head>
+  <body id="main">
+         <nav>
+        <div class="Logo">
+            <a href="https://islandbender.com" target="_blank"><img src="https://islandbender.com/assets/logo.png" "width:50px" "height:50px"></a>
+        </div>
+      
+    </nav>
+  <div class="container">
+    <div class="thumbnail">
+      <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/2333080/capsule_616x353.jpg?t=1677153144" alt="Thumbnail 1" />
+      <h2>How to Play Island Bender</h2>
+      <p>Learn how to control and move your character.</p>
+      <div class="date">April 13, 2023</div>
+      <a href="#">Read More</a>
+    </div>
+
+  
+
+  </div>
+
+   <footer
+              class="w-full py-5 mt-16 h-100 bg-black relative text-white"
+            >
+              <div class="mx-[5vw] md:mx-[10vw] text-center">
+                <p style="text-align: center">Follow Island Bender</p>
+                <div
+                  class="social-media"
+                  style="font-size: 40px; margin-top: 20px"
+                >
+                  <a
+                    href="https://www.reddit.com/r/IslandBender/"
+                    target="_blank"
+                    ><i class="fa-brands fa-reddit hover:text-[#FF4300]"></i
+                  ></a>
+                  <a href="https://www.tiktok.com/@islandbender" target="_blank"
+                    ><i class="fa-brands fa-tiktok hover:text-[#ff0050]"></i
+                  ></a>
+                  <a href="https://twitter.com/islandbender" target="_blank"
+                    ><i class="fa-brands fa-twitter hover:text-[#00acee]"></i
+                  ></a>
+                  <a
+                    href="https://discord.com/invite/eMS72Bd38E"
+                    target="_blank"
+                    ><i class="fa-brands fa-discord hover:text-[#5865F2]"></i
+                  ></a>
+                  <a
+                    href="https://store.steampowered.com/app/2224760/Island_Bender/?utm_source=website"
+                    target="_blank"
+                    ><i class="fa-brands fa-steam hover:text-[#66c0f4]"></i
+                  ></a>
+                </div>
+
+                <div
+                  class="mt-16 md:mt-8 flex flex-col md:flex-row gap-2 md:gap-6 justify-center"
+                >
+                  <a
+                    href="https://islandbender.com/press"
+                    target="_blank"
+                    class="block"
+                    >Press Info</a
+                  >
+                  <a
+                    href="https://drive.google.com/drive/folders/12fQbXj1WvLfhn6sLXPJn5QflXbbQY2p5"
+                    target="_blank"
+                    class="block"
+                    >Press Kit</a
+                  >
+                  <a
+                    href="https://islandbender.com/privacy"
+                    target="_blank"
+                    class="block"
+                    >Privacy</a
+                  >
+                  <a href="mailto:hi@islandbender.com" class="block">Contact</a>
+                  <a
+                    href="https://islandbender.com/faq"
+                    target="_blank"
+                    class="block"
+                    >FAQs</a
+                  >
+                </div>
+                <p class="mt-16 md:mt-8 text-center">
+                  ©2023 Island Bender Games
+                </p>
+              </div>
+            </footer>
+    
+
+    
+</body>
