@@ -84,6 +84,10 @@ nav {
     margin-right: 3rem;
   }
 
+	.hidden {
+    display: none;
+  }
+	
   .img {
     overflow-clip-margin: content-box;
     overflow: clip;
@@ -324,7 +328,16 @@ footer p {
                 </p>
               </div>
             </footer>
-    
+    <script>
+  window.addEventListener('scroll', function() {
+    var logo = document.getElementById('logo');
+    if (window.innerWidth <= 767 && window.pageYOffset > 0) {
+      logo.classList.add('hidden');
+    } else {
+      logo.classList.remove('hidden');
+    }
+  });
+</script>
 
     
 </body>
