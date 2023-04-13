@@ -27,7 +27,7 @@ const closeModal = () => {
 const changeModalImage = (url) => {
   const source = modalImg.children[0];
   const img = modalImg.children[1];
-  source.type = url.includes(".gif") ? "video/webm" : "image/webp";
+  source.type = url.includes(".gif") ? "video/webm" : "image/jpg";
   source.srcset = url.replace(".gif", ".webm").replace(".jpg", ".webp");
 
   img.src = url;
