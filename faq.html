@@ -143,6 +143,12 @@ nav {
     overflow: clip;
   }
 
+	@media only screen and (max-width: 768px) {
+  #logo {
+    display: none;
+  }
+}
+	
   .Content {
     width: 100%;
     margin: auto;
@@ -243,7 +249,7 @@ nav {
 </head>
 <body>
    <nav>
-        <div class="Logo">
+        <div id="logo" class="Logo">
             <a href="https://islandbender.com" target="_blank"><img src="https://islandbender.com/assets/logo.png" "width:50px" "height:50px"></a>
         </div>
       
@@ -333,6 +339,17 @@ nav {
 				} 
 			});
 		}
+		var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("logo").style.display = "block";
+  } else {
+    document.getElementById("logo").style.display = "none";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 	</script>
 </body>
 </html>
