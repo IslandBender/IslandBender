@@ -24,11 +24,19 @@ const closeModal = () => {
   modal.style.display = "none";
 };
 
+
+
 const changeModalImage = (url) => {
   const source = modalImg.children[0];
   const img = modalImg.children[1];
-  source.type = url.includes(".gif") ? "video/webm" : "image/jpg";
-  source.srcset = url.replace(".gif", ".webm").replace(".jpg", ".webp");
+
+  if (url.includes(".gif")) {
+    source.type = "video/webm";
+    source.srcset = url.replace(".gif", ".webm");
+  } else {
+    source.type = "image/jpeg";
+    source.srcset = url;
+  }
 
   img.src = url;
 };
