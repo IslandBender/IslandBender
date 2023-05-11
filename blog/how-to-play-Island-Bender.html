@@ -211,6 +211,38 @@ footer p {
     #main {
   background: linear-gradient(360deg, rgba(157,238,221,1) 0%, rgba(87,214,205,1) 24%, rgba(10,71,67,1) 100%);
 }
+	
+ .post-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.post-navigation button {
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.post-navigation button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.post-navigation button:first-child {
+  margin-right: 7rem;
+}
+
+.post-navigation button:last-child {
+  margin-left: 1rem;
+}
+
     </style>
   <body id="main">
       <nav>
@@ -259,13 +291,13 @@ footer p {
         <br>
 	      <br>
 	      <br>
-	      <p><u><a href="https://islandbender.com/blog">← Back to blog</a></u></p>
       </article>
     </main>
 
-
-
-
+     <div class="post-navigation">
+  <button class="previous-post"><a href="https://islandbender.com/blog"><i class="fas fa-chevron-left"></i>Back to Blog</a></button>
+  <button class="next-post">Next Post<i class="fas fa-chevron-right"></i></button>
+</div>
 
 
   </div>
