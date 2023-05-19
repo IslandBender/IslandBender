@@ -1,6 +1,5 @@
 <!-- Developed by Inês Reis @inesreisx. A game by Felix Voigtländer @felix.voigtlaender, Sima Spielmann @karacho_sima, Anh-Thu Nguyen, and Florian Simon @florian_simon_composer.<br>®2023 Island Bender from Island Bender Games -->
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html lang="en">
 <head>
 		<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XN5LBLM7QH"></script>
@@ -381,5 +380,4 @@ footer p {
               </div>
             </footer>
     <script src="https://cdn.tailwindcss.com"></script>
-</body>
 </html>
