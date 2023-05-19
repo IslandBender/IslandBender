@@ -103,75 +103,29 @@ img {
 	    
 	          
       
-      .recommended-videos {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.video-slider {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-}
-
-.video-slide {
-  flex: 0 0 33.33%;
-  margin-right: 20px;
-}
-
-.video-slide:last-child {
-  margin-right: 0;
-}
-
-.video-slide img {
-  width: 100%;
-  height: auto;
-}
-
-.video-info {
-  padding: 10px;
-}
-
-.video-info h3 {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-.video-info p {
-  margin: 5px 0;
+  .recommended-videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    overflow-y: scroll;
+    height: 400px; /* Set the desired height for the scrollable area */
   }
-  
-  .slide-div {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
 
-.slide-div::-webkit-scrollbar {
-  display: none;
-}
+  .video-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    overflow: hidden;
+  }
 
-.video-container {
-  flex: 0 0 auto;
-  margin-right: 20px;
-}
-
-.video {
-  width: 320px;
-  height: 180px;
-}
-
-.video-title {
-  margin-top: 10px;
-  font-size: 14px;
-  text-align: center;
-}
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
     </style>
 	</head>
 
@@ -415,59 +369,57 @@ img {
 </li>
   </li>
 </ul>
+<h2>YouTubers playing Island Bender</h2>
 <div class="recommended-videos">
-  <h2>YouTubers playing Island Bender</h2>
-  <div class="video-slider">
-	   <div class="video-slide">
-      <iframe width="225" height="150" src="https://www.youtube.com/embed/YNTttujLCrc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-	        <div class="video-slide">
-      <iframe width="225" height="150" src="https://www.youtube.com/embed/SNgZHRsSnYg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-	        <div class="video-slide">
-      <iframe width="225" height="150" src="https://www.youtube.com/embed/aeXD4U8PsK8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-	        <div class="video-slide">
-      <iframe width="225" height="150" src="https://www.youtube.com/embed/ka6xa1NYcIg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-	  	        <div class="video-slide">
-      <iframe width="225" height="150" src="https://www.youtube.com/embed/xCaa7iH-opE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-	        <div class="video-slide">
-      <iframe width="225" height="150" src="https://www.youtube.com/embed/od8bkrWsBGQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-	        <div class="video-slide">
-      <iframe width="225" height="150" src="https://www.youtube.com/embed/yvq3oE_TzA8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-	   <div class="video-slide">
-      <iframe width="225" height="150" src="https://www.youtube.com/embed/GumgI_lSob8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-        <div class="video-slide">
-      <iframe width="225" height="150" src="https://www.youtube.com/embed/RFKTHIW50No" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-        <div class="video-slide">
-      <iframe width="225" height="150" src="https://www.youtube.com/embed/XIuTmymM_jo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-    <div class="video-slide">
-      <iframe width="225" height="150" src="https://www.youtube.com/embed/lT986BRuf0I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-    <div class="video-slide">
-<iframe width="225" height="150" src="https://www.youtube.com/embed/6lh19utGZo8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-    <div class="video-slide">
-      <iframe width="225" height="150" src="https://www.youtube.com/embed/KAlfA3sn4wY" frameborder="0" allow="autoplay; encrypted-media"></iframe>
-    </div>
-     <div class="video-slide">
-      <iframe width="225" height="150" src="https://www.youtube.com/embed/LF1C8nrs1cY" frameborder="0" allow="autoplay; encrypted-media"></iframe>
-    </div>
-     <div class="video-slide">
-      <iframe width="225" height="150" src="https://www.youtube.com/embed/cAo5PYGsMzs" frameborder="0" allow="autoplay; encrypted-media"></iframe>
-    </div>
-     <div class="video-slide">
-      <iframe width="225" height="150" src="https://www.youtube.com/embed/d0goDMB2k9c" frameborder="0" allow="autoplay; encrypted-media"></iframe>
-    </div>
-</div>
+  <div class="video-container">
+    <iframe width="225" height="150" src="https://www.youtube.com/embed/YNTttujLCrc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
+  <div class="video-container">
+    <iframe width="225" height="150" src="https://www.youtube.com/embed/SNgZHRsSnYg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+  <div class="video-container">
+    <iframe width="225" height="150" src="https://www.youtube.com/embed/aeXD4U8PsK8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+  <div class="video-container">
+    <iframe width="225" height="150" src="https://www.youtube.com/embed/ka6xa1NYcIg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+  <div class="video-container">
+    <iframe width="225" height="150" src="https://www.youtube.com/embed/xCaa7iH-opE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+  <div class="video-container">
+    <iframe width="225" height="150" src="https://www.youtube.com/embed/od8bkrWsBGQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+  <div class="video-container">
+    <iframe width="225" height="150" src="https://www.youtube.com/embed/yvq3oE_TzA8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+  <div class="video-container">
+    <iframe width="225" height="150" src="https://www.youtube.com/embed/GumgI_lSob8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+  <div class="video-container">
+    <iframe width="225" height="150" src="https://www.youtube.com/embed/RFKTHIW50No" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+    <div class="video-container">
+    <iframe width="225" height="150" src="https://www.youtube.com/embed/XIuTmymM_jo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+    <div class="video-container">
+    <iframe width="225" height="150" src="https://www.youtube.com/embed/lT986BRuf0I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+    <div class="video-container">
+    <iframe width="225" height="150" src="https://www.youtube.com/embed/6lh19utGZo8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+    <div class="video-container">
+    <iframe width="225" height="150" src="https://www.youtube.com/embed/KAlfA3sn4wY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+    <div class="video-container">
+    <iframe width="225" height="150" src="https://www.youtube.com/embed/LF1C8nrs1cY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+    <div class="video-container">
+    <iframe width="225" height="150" src="https://www.youtube.com/embed/cAo5PYGsMzs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+    <div class="video-container">
+    <iframe width="225" height="150" src="https://www.youtube.com/embed/d0goDMB2k9c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
 <hr>
 <div class="uk-grid">
   <div class="uk-width-medium-1-2">
