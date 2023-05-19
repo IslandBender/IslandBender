@@ -1,0 +1,384 @@
+<!-- Developed by Inês Reis @inesreisx. A game by Felix Voigtländer @felix.voigtlaender, Sima Spielmann @karacho_sima, Anh-Thu Nguyen, and Florian Simon @florian_simon_composer.<br>®2023 Island Bender from Island Bender Games -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XN5LBLM7QH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XN5LBLM7QH');
+</script>
+	<!---<meta http-equiv="refresh" content="0; url=https://islandbender.com/press">----->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Steam Remote Play | Island Bender</title>
+		<meta name="description" content="On Steam. How to use Steam Remote Play for Island Bender" />
+	  <link rel="canonical" href="https://islandbender.com/" />
+	  <link rel="icon" type="image/x-icon" href="https://img.itch.zone/aW1nLzgzNTUwMjUucG5n/32x32%23/G8aY8s.png">
+	  <meta property="og:title" content="Island Bender"/>
+	  <meta property="og:url" content="https://islandbender.com"/>
+	  <meta property="og:site_name" content="Island Bender">
+	  <meta property="og:description" content="Island Bender is a physics-based couch-fighting game with up to 6 players. Throw rocks at each other, collect power-ups and master your bending style. Have fun"/>
+	  <meta property="og:image" content="https://cdn.cloudflare.steamstatic.com/steam/apps/2224760/header.jpg?t=1680304639"/>
+	  <meta property="og:type" content="website"/>
+	  <meta name="twitter:card" content="summary_large_image">
+	  <meta name="twitter:site" content="@islandbender">
+	  <meta name="twitter:creator" content="@islandbender">
+	  <meta name="twitter:title" content="Island Bender">
+	  <meta name="twitter:description" content="Island Bender is a physics-based couch-fighting game with up to 6 players. Throw rocks at each other, collect power-ups and master your bending style. Have fun!">
+	  <meta name="twitter:image:src" content="https://cdn.cloudflare.steamstatic.com/steam/apps/2224760/header.jpg?t=1680304639">
+	  <meta name="twitter:url" content="https://islandbender.com">
+	  <link href="style.css" rel="stylesheet" type="text/css" />
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/classic-071822.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+<style>
+   :root {
+      --header-height: 8rem;
+    }
+    nav {
+      padding: 1rem;
+      z-index: 2;
+      position: fixed;
+      top: 0rem;
+      left: 0rem;
+      width: 100%;
+      height: var(--header-height);
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      background-color: ;
+      color: white;
+    }
+    .Logo {
+      align-items: center;
+      justify-content: center;
+    }
+    .Logo img {
+      height: 100%;
+      margin-right: 3rem;
+    }
+    .img {
+      overflow-clip-margin: content-box;
+      overflow: clip;
+    }
+    body {
+      font-family: Coves, sans-serif;
+      font-size: 20px;
+      min-height: 100vh;
+      margin: 0;
+      font-size: 20px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 1.9rem;
+      margin: calc(var(--header-height) + 20px) auto;
+      max-width: 900px;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - calc(var(--header-height) + 3.8rem));
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    article {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      max-width: 800px;
+      width: 100%;
+    }
+    header {
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 3em;
+      margin: 0;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+   h2 {
+      font-size: 5em;
+      margin: 0;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+  
+    p {
+      font-size: 20px;
+      margin: 0;
+      color: #333;
+      line-height: 1.5;
+    }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+ul.links {
+  padding-left: 0px;
+  text-align: center;
+}
+
+ul.links > li {
+  display: inline-block;
+}
+
+ul.links > li:hover {
+  text-decoration: underline;
+}
+
+ul.links > li > a {
+  color: #333;
+  text-decoration: none;
+}
+
+.social-media a {
+  margin-right: 15px;
+}
+
+div.flex-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.flex-links p {
+  margin-right: 10px;
+}
+
+footer {
+  position: relative;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0.5rem 0;
+  font-size: 20px;
+  color: white;
+}
+@media only screen and (max-width: 768px) {
+  article {
+    margin: 10px;
+  }
+}
+  
+  @media only screen and (max-width: 768px) {
+  .Logo {
+    display: none;
+  }
+}
+
+	@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+    #main {
+  background: linear-gradient(360deg, rgba(157,238,221,1) 0%, rgba(87,214,205,1) 24%, rgba(10,71,67,1) 100%);
+}
+	
+ .post-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  align-items: center;
+  margin-left: 1.8rem;
+}
+
+.post-navigation button {
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.post-navigation button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.post-navigation button:first-child {
+  margin-right: 7rem;
+}
+
+.post-navigation button:last-child {
+  margin-left: 1rem;
+}
+
+    </style>
+       </head>
+  <body id="main">
+      <nav>
+        <div class="Logo">
+            <a href="https://islandbender.com/blog"><img src="https://islandbender.com/assets/logo.png" "width:50px" "height:50px"></a>
+        </div>
+      
+    </nav>
+<main>
+  <article>
+    <header>
+      <h1 class="text-4xl">Play Island Bender Together with Remote Play on Steam!</h1>
+    </header>
+
+    <p>Ready to embark on an epic Island Bender adventure but don’t have any friends nearby? Don't worry, we've got your back! In this guide, we'll show you how to connect on Steam Remote Play and enjoy the thrilling multiplayer experience of Island Bender with up to five other friends, regardless of your geographical locations. No distance can keep you from having a blast together!</p>
+    <br>
+    <h3><strong>Only the host needs to own and install the game, while others join via Steam Remote Play.</strong></h3>
+    <br>
+    <h2>Step 1: Setting Up Steam Remote Play</h2>
+    <ol>
+      <li>● Launch the Steam client and log in to your account.</li>
+      <li>● Enable Steam Guard for added security if you haven't already (Steam > Settings > Account > Manage Steam Guard Account Security).</li>
+      <li>● Open the "Steam" menu from the top-left corner and select "Settings."</li>
+      <li>● In the settings window, choose the "Remote Play" tab.</li>
+      <li>● Check the box that says "Enable Remote Play" to activate the feature.</li>
+    </ol>
+    <br>
+    <h2>Step 2: Inviting Friends to Remote Play Together</h2>
+    <ol>
+      <li>● Launch Island Bender on your computer.</li>
+      <li>● Once the game is running, open your Steam Friends list by clicking on the "Friends & Chat" button at the bottom-right corner of the Steam client.</li>
+      <li>● Locate the friend(s) you want to invite and right-click on their name.</li>
+      <li>● In the context menu, select "Remote Play Together."</li>
+    </ol>
+    <br>
+    <h2>Step 3: Starting the Remote Play Session</h2>
+    <ol>
+      <li>● Once your friends accept the invitation, they will see a notification indicating that you're inviting them to play Island Bender.</li>
+      <li>● Once everyone has joined, the game will start on your computer and stream to your friends' devices.</li>
+      <li>● Your friends will be able to play the game using their controllers or keyboard and mouse.</li>
+    </ol>
+    <br>
+    <h2>Step 4: Customizing Remote Play Settings</h2>
+    <ol>
+      <li>● While in a Remote Play session, open the Steam Overlay by pressing Shift+Tab (default key combination) on your keyboard.</li>
+      <li>● In the Steam Overlay, click on the "Settings" button (the gear icon) at the bottom-right corner.</li>
+      <li>● Adjust settings such as resolution, streaming quality, and audio options based on your hardware and network capabilities.</li>
+    </ol>
+    <br>
+    <p>Playing Island Bender with friends is an exciting experience, and thanks to Steam Remote Play, you can now enjoy it even if you don't have any friends nearby. By following this guide, you've learned how to set up Steam Remote Play, invite friends, start a session, and customize settings for a seamless gaming experience. So gather your virtual crew, get ready to go on an adventure, and start throwing rocks at each other!</p>
+    <br>
+    <p>Learn more about Steam Remote Play <a href="https://store.steampowered.com/remoteplay"><strong>here</strong></a>.</p>
+    <br>
+    <p><strong><u><a href="https://store.steampowered.com/app/2224760/Island_Bender/?utm_source=blog">Available on Steam</a></u></strong></p>
+    <p>If you need any support or have any questions about the game, just reach out to us anytime.Have fun!</p>
+    <br>
+    <br>
+    <br>
+  </article>
+</main>
+
+     <div class="post-navigation">
+  <button class="previous-post"><a href="https://islandbender.com/blog/how-to-play-Island-Bender"><i class="fas fa-chevron-left"></i> Previous Post</a></button>
+  <button class="next-post"><a href="https://islandbender.com/blog">Back to Blog </a><i class="fas fa-chevron-right"></i></button>
+</div>
+
+
+  </div>
+
+   <footer
+              class="w-full py-5 mt-16 h-100 bg-black relative text-white"
+            >
+              <div class="mx-[5vw] md:mx-[10vw] text-center">
+                <p style="text-align: center">Follow Island Bender</p>
+                <div
+                  class="social-media"
+                  style="font-size: 40px; margin-top: 20px"
+                >
+                  <a
+                    href="https://www.reddit.com/r/IslandBender/"
+                    target="_blank"
+                    ><i class="fa-brands fa-reddit hover:text-[#FF4300]"></i
+                  ></a>
+                  <a href="https://www.tiktok.com/@islandbender" target="_blank"
+                    ><i class="fa-brands fa-tiktok hover:text-[#ff0050]"></i
+                  ></a>
+                  <a href="https://twitter.com/islandbender" target="_blank"
+                    ><i class="fa-brands fa-twitter hover:text-[#00acee]"></i
+                  ></a>
+                  <a
+                    href="https://discord.com/invite/eMS72Bd38E"
+                    target="_blank"
+                    ><i class="fa-brands fa-discord hover:text-[#5865F2]"></i
+                  ></a>
+                  <a
+                    href="https://store.steampowered.com/app/2224760/Island_Bender/?utm_source=website"
+                    target="_blank"
+                    ><i class="fa-brands fa-steam hover:text-[#66c0f4]"></i
+                  ></a>
+                </div>
+
+                <div
+                  class="mt-16 md:mt-8 flex flex-col md:flex-row gap-2 md:gap-6 justify-center"
+                >
+                  <a
+                    href="https://islandbender.com/press"
+                    target="_blank"
+                    class="block"
+                    >Press Info</a
+                  >
+                  <a
+                    href="https://drive.google.com/drive/folders/12fQbXj1WvLfhn6sLXPJn5QflXbbQY2p5"
+                    target="_blank"
+                    class="block"
+                    >Press Kit</a
+                  >
+                  <a
+                    href="https://islandbender.com/privacy"
+                    target="_blank"
+                    class="block"
+                    >Privacy</a
+                  >
+                  <a href="mailto:hi@islandbender.com" class="block">Contact</a>
+                  <a
+                    href="https://islandbender.com/faq"
+                    target="_blank"
+                    class="block"
+                    >FAQs</a
+                  >
+                </div>
+                <p class="mt-16 md:mt-8 text-center">
+                  ©2023 Island Bender Games
+                </p>
+              </div>
+            </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
